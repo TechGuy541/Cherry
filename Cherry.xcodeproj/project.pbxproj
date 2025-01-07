@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 74;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E626CA342C58A65A00CA2B9F /* SDL in Frameworks */ = {isa = PBXBuildFile; productRef = E626CA332C58A65A00CA2B9F /* SDL */; };
+		E64C33722D17F5EA00C06A35 /* Cherry in Frameworks */ = {isa = PBXBuildFile; productRef = E64C33712D17F5EA00C06A35 /* Cherry */; };
+		E65169DE2CC2444F00588B21 /* FUIAlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = E65169DD2CC2444F00588B21 /* FUIAlertKit */; };
+		E667C0782C47C7EA00DB0327 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = E667C0772C47C7EA00DB0327 /* OpenSSL */; };
+		E667C07A2C47C7F700DB0327 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E667C0792C47C7F700DB0327 /* CoreHaptics.framework */; };
+		E667C07C2C47C81500DB0327 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E667C07B2C47C81500DB0327 /* CoreMotion.framework */; };
+		E67655942CE3D07E00222E44 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E67655932CE3D07E00222E44 /* FirebaseAuth */; };
+		E67655962CE3D07E00222E44 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E67655952CE3D07E00222E44 /* FirebaseFirestore */; };
+		E67655982CE3D07E00222E44 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E67655972CE3D07E00222E44 /* FirebaseFirestoreCombine-Community */; };
+		E6A483BD2C36917800CFA6DA /* DirectoryManager in Frameworks */ = {isa = PBXBuildFile; productRef = E6A483BC2C36917800CFA6DA /* DirectoryManager */; };
+		E6A483C22C36A27700CFA6DA /* LayoutManager in Frameworks */ = {isa = PBXBuildFile; productRef = E6A483C12C36A27700CFA6DA /* LayoutManager */; };
+		E6FA9F612C818EF80034BBD1 /* libyuv in Frameworks */ = {isa = PBXBuildFile; productRef = E6FA9F602C818EF80034BBD1 /* libyuv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E60F5AF02C4122D8006902E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67655B52CE49E7900222E44 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E6625B6E2C37AD2C0025588C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E667C0792C47C7F700DB0327 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		E667C07B2C47C81500DB0327 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E67655A02CE49E7600222E44 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E67655A22CE49E7700222E44 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E67D44182C37A75100D76E54 /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = SDKROOT; };
+		E67D441A2C37A76400D76E54 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E690A6A82C33B09E00652203 /* Cherry-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cherry-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6ACCCA22CE5EC3900C27006 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E6D0CF712D17EFCC00F1D246 /* Cherry */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Cherry; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E6DCCE1D2CE5DB9C0090A656 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				/Localized/LaunchScreen.storyboard,
+				Extensions/Bundle.swift,
+				Info.plist,
+			);
+			target = E690A6A72C33B09E00652203 /* Cherry-iOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		E6DCCE1E2CE5DB9C0090A656 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = E690A6A62C33B09E00652203 /* Resources */;
+			membershipExceptions = (
+				Base.lproj/LaunchScreen.storyboard,
+				Extensions/Bundle.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E6DCCD7A2CE5DB220090A656 /* Packages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Packages; sourceTree = "<group>"; };
+		E6DCCDD42CE5DB9C0090A656 /* Folium-iOS */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E6DCCE1D2CE5DB9C0090A656 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, E6DCCE1E2CE5DB9C0090A656 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Folium-iOS"; sourceTree = "<group>"; };
+		E6DCD7DA2CE5DCE80090A656 /* Dependencies */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Dependencies; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E690A6A52C33B09E00652203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64C33722D17F5EA00C06A35 /* Cherry in Frameworks */,
+				E626CA342C58A65A00CA2B9F /* SDL in Frameworks */,
+				E667C07A2C47C7F700DB0327 /* CoreHaptics.framework in Frameworks */,
+				E67655982CE3D07E00222E44 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				E6A483BD2C36917800CFA6DA /* DirectoryManager in Frameworks */,
+				E65169DE2CC2444F00588B21 /* FUIAlertKit in Frameworks */,
+				E667C0782C47C7EA00DB0327 /* OpenSSL in Frameworks */,
+				E67655942CE3D07E00222E44 /* FirebaseAuth in Frameworks */,
+				E6A483C22C36A27700CFA6DA /* LayoutManager in Frameworks */,
+				E667C07C2C47C81500DB0327 /* CoreMotion.framework in Frameworks */,
+				E6FA9F612C818EF80034BBD1 /* libyuv in Frameworks */,
+				E67655962CE3D07E00222E44 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E63D9EC12C33BF560038257F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E667C07B2C47C81500DB0327 /* CoreMotion.framework */,
+				E667C0792C47C7F700DB0327 /* CoreHaptics.framework */,
+				E6625B6E2C37AD2C0025588C /* CoreBluetooth.framework */,
+				E67D441A2C37A76400D76E54 /* CoreAudio.framework */,
+				E67D44182C37A75100D76E54 /* CoreAudioTypes.framework */,
+				E67655A02CE49E7600222E44 /* WidgetKit.framework */,
+				E67655A22CE49E7700222E44 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E690A69F2C33B09E00652203 = {
+			isa = PBXGroup;
+			children = (
+				E6DCCD7A2CE5DB220090A656 /* Packages */,
+				E6ACCCA52CE5EC3900C27006 /* Cores */,
+				E6DCD7DA2CE5DCE80090A656 /* Dependencies */,
+				E6DCCDD42CE5DB9C0090A656 /* Folium-iOS */,
+				E690A6A92C33B09E00652203 /* Products */,
+				E63D9EC12C33BF560038257F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E690A6A92C33B09E00652203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E690A6A82C33B09E00652203 /* Cherry-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6ACCCA52CE5EC3900C27006 /* Cores */ = {
+			isa = PBXGroup;
+			children = (
+				E6D0CF712D17EFCC00F1D246 /* Cherry */,
+				E6ACCCA22CE5EC3900C27006 /* .gitignore */,
+			);
+			path = Cores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E690A6A72C33B09E00652203 /* Cherry-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E690A6BC2C33B09F00652203 /* Build configuration list for PBXNativeTarget "Cherry-iOS" */;
+			buildPhases = (
+				E690A6A42C33B09E00652203 /* Sources */,
+				E690A6A52C33B09E00652203 /* Frameworks */,
+				E690A6A62C33B09E00652203 /* Resources */,
+				E60F5AF02C4122D8006902E2 /* Embed Frameworks */,
+				E67655B52CE49E7900222E44 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E6DCCDD42CE5DB9C0090A656 /* Folium-iOS */,
+			);
+			name = "Cherry-iOS";
+			packageProductDependencies = (
+				E6A483BC2C36917800CFA6DA /* DirectoryManager */,
+				E6A483C12C36A27700CFA6DA /* LayoutManager */,
+				E667C0772C47C7EA00DB0327 /* OpenSSL */,
+				E626CA332C58A65A00CA2B9F /* SDL */,
+				E6FA9F602C818EF80034BBD1 /* libyuv */,
+				E65169DD2CC2444F00588B21 /* FUIAlertKit */,
+				E67655932CE3D07E00222E44 /* FirebaseAuth */,
+				E67655952CE3D07E00222E44 /* FirebaseFirestore */,
+				E67655972CE3D07E00222E44 /* FirebaseFirestoreCombine-Community */,
+				E64C33712D17F5EA00C06A35 /* Cherry */,
+			);
+			productName = Folium;
+			productReference = E690A6A82C33B09E00652203 /* Cherry-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E690A6A02C33B09E00652203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = "Jarrod Norwell";
+				TargetAttributes = {
+					E690A6A72C33B09E00652203 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+				};
+			};
+			buildConfigurationList = E690A6A32C33B09E00652203 /* Build configuration list for PBXProject "Cherry" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E690A69F2C33B09E00652203;
+			packageReferences = (
+				E60F60D12C412517006902E2 /* XCRemoteSwiftPackageReference "zstd" */,
+				E667C0762C47C7E900DB0327 /* XCRemoteSwiftPackageReference "OpenSSL" */,
+				E626CA322C58A65A00CA2B9F /* XCRemoteSwiftPackageReference "SwiftSDL2" */,
+				E6FA9F582C818D350034BBD1 /* XCRemoteSwiftPackageReference "libyuv" */,
+				E67655922CE3D07E00222E44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 60;
+			productRefGroup = E690A6A92C33B09E00652203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E690A6A72C33B09E00652203 /* Cherry-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E690A6A62C33B09E00652203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E690A6A42C33B09E00652203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E690A6BA2C33B09F00652203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Debug;
+		};
+		E690A6BB2C33B09F00652203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E690A6BD2C33B09F00652203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Folium-iOS/Folium.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = F4QL9A2T88;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Folium-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Folium;
+				INFOPLIST_KEY_GCSupportsControllerUserInteraction = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Folium uses your devices camera for certain functionality within its cores";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Folium uses your devices microphone for certain functionality within its cores";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Folium uses your devices motion data for some core functionality such as step count in Cytrus";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.14;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.techguy.Folium-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Debug;
+		};
+		E690A6BE2C33B09F00652203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Folium-iOS/Folium.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = F4QL9A2T88;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Folium-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Folium;
+				INFOPLIST_KEY_GCSupportsControllerUserInteraction = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Folium uses your devices camera for certain functionality within its cores";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Folium uses your devices microphone for certain functionality within its cores";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Folium uses your devices motion data for some core functionality such as step count in Cytrus";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.14;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.techguy.Folium-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E690A6A32C33B09E00652203 /* Build configuration list for PBXProject "Cherry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E690A6BA2C33B09F00652203 /* Debug */,
+				E690A6BB2C33B09F00652203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E690A6BC2C33B09F00652203 /* Build configuration list for PBXNativeTarget "Cherry-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E690A6BD2C33B09F00652203 /* Debug */,
+				E690A6BE2C33B09F00652203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E60F60D12C412517006902E2 /* XCRemoteSwiftPackageReference "zstd" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/zstd";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
+		E626CA322C58A65A00CA2B9F /* XCRemoteSwiftPackageReference "SwiftSDL2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ctreffs/SwiftSDL2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+		E667C0762C47C7E900DB0327 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.6000;
+			};
+		};
+		E67655922CE3D07E00222E44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E6FA9F582C818D350034BBD1 /* XCRemoteSwiftPackageReference "libyuv" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ronnyf/libyuv";
+			requirement = {
+				branch = release/webrtc;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E626CA332C58A65A00CA2B9F /* SDL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E626CA322C58A65A00CA2B9F /* XCRemoteSwiftPackageReference "SwiftSDL2" */;
+			productName = SDL;
+		};
+		E64C33712D17F5EA00C06A35 /* Cherry */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Cherry;
+		};
+		E65169DD2CC2444F00588B21 /* FUIAlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FUIAlertKit;
+		};
+		E667C0772C47C7EA00DB0327 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E667C0762C47C7E900DB0327 /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+		E67655932CE3D07E00222E44 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67655922CE3D07E00222E44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E67655952CE3D07E00222E44 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67655922CE3D07E00222E44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E67655972CE3D07E00222E44 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67655922CE3D07E00222E44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E6A483BC2C36917800CFA6DA /* DirectoryManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DirectoryManager;
+		};
+		E6A483C12C36A27700CFA6DA /* LayoutManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LayoutManager;
+		};
+		E6FA9F602C818EF80034BBD1 /* libyuv */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6FA9F582C818D350034BBD1 /* XCRemoteSwiftPackageReference "libyuv" */;
+			productName = libyuv;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E690A6A02C33B09E00652203 /* Project object */;
+}
